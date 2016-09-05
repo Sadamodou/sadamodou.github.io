@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            box-sizing:border-box;
+        }
+        #header {
+            text-align:right;
+            padding:0px;
+            margin:0px;
+        }
+        p {
+            font-size:15px;
+        }
+        .me:link {
+            color:#000;
+        }
+        .m:link {
+            color:gray;
+        }
+        .hidden {
+            position:absolute;
+            top:20px;
+            left:0px;
+            background-color:gainsboro;
+        }
+         .hidden a {
+            display:inline-block;
+            color:#ff0099;
+            }
+        .show {
+            position:relative;
+            width:80px;
+            height:23px;
+            background-color:dodgerblue;
+            text-align:center;
+            line-height:20px;
+            color:#fff;
+            float:right
+        }
+        #content {
+            position:absolute;
+            top:200px;
+            left:635px;        
+        }
+        .qr_code {
+            text-align:right;
+            font-size:13px;
+            width:120px;
+            height:40px;
+            line-height:25px;
+            margin:15px;
+            float:left;
+        }
+        #footer {
+            position:absolute;
+            bottom:100px;
+            left:610px;
+            height:40px;
+            position:fixed;
+        }
+        .end {
+
+            float:left;
+            width:350px;
+            padding:0 0 0 25px;
+        }
+        .link {
+            font-size:10px;
+        }
+    </style>
+    <script>
+function showhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function showhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <p><a href="#" class="me"><b>糯米</b></a>&nbsp;&nbsp;<a href="#" class="me"><b>新闻</b></a>&nbsp;&nbsp;<a href="#" class="me"><b>hao123</b></a>&nbsp;&nbsp;<a href="#" class="me"><b>地图</b></a>&nbsp;&nbsp;<a href="#" class="me"><b>视频</b></a>&nbsp;&nbsp;<a href="#" class="me"><b>贴吧</b></a>&nbsp;&nbsp;<a href="#" class="me">登录</a>&nbsp;&nbsp;<a href="#" class="me">设置</a>&nbsp;&nbsp;
+            <!--<div class="show" onmouseover="showhid(downmenu1)" onmouseout="showhid2(downmenu1)">-->
+            <span class="show" onmouseover="showhid(downmenu1)" onmouseout="showhid2(downmenu1)">更多产品</span><div class="hidden" id="downmenu1" style="display:none">
+                                                                                                                                                               <a href="#">音乐</a><br />
+                                                                                                                                                               <a href="#">图片</a><br />
+                                                                                                                                                               <a href="#">知道</a><br />
+                                                                                                                                                               <a href="#">风云榜</a><br />
+                                                                                                                                                               <a href="#">全部产品</a><br /><!--</div>--></div></p>
+    </div>
+   
+    <div id="content">
+        <img src="bd_logo1.png" width="270px" height="130px" style="position:relative;left:185px;top:-20px"/>
+        <form>
+            <input type="text" size="72" style="height:35px;"/><span class="s_btn_wr"><input type="submit" id="su" value="百度一下" class="s_btn" style="width:103px;height:35px;background-color:dodgerblue;border:none;color:#fff;font-size:15px"></span>
+        </form>
+    </div>
+    
+    <div id="footer">
+        <div class="qr_code">
+            <b>手机百度</b><br />
+            快人一步
+        </div>
+        <div class="qr_code">
+            <b>百度糯米</b><br />
+            一元大餐
+        </div>
+        <div class="end">
+            <p class="link">
+                <a href="#" class="m">把百度设为主页</a>&nbsp;&nbsp;<a href="#" class="m">关于百度</a>&nbsp;&nbsp;<a href="#" class="m">About Baidu</a>&nbsp;&nbsp;<a href="#" class="m">百度推广</a>
+            </p>
+            <p style="font-size:10px;color:gray">
+                ©2016 Baidu <a href="#" class="m">使用百度前必读</a> <a href="#" class="m">意见反馈</a> 京ICP证030173号
+                京公网安备11000002000001号
+            </p>
+        </div>
+    </div>
+</body>
+</html>

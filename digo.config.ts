@@ -1,0 +1,1 @@
+﻿digo.src(*www/**/*.html).pipe(*digo-html-minifier*);
